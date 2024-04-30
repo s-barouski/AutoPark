@@ -67,7 +67,9 @@ public class Main {
     System.out.println(driversRoom.getDrivers().length);
 
     Driver bob = new Driver();
+    bob.setDriverLicense(DriverLicense.CATEGORY_B);
     bob.setFio("Bob");
+    bob.setLetherFoot(23);
     bob.setAge(40);
     bob.setBirthdateDay(20);
     bob.setBirthdateMonth(12);
@@ -75,75 +77,75 @@ public class Main {
     bob.setMale(true);
     bob.setPosition("Master");
     driversRoom.addDriver(bob);
-    System.out.println(driversRoom.getDrivers()[0].getFio()+", "+bob.getAge()+", "+bob.getPosition());
+    System.out.println(driversRoom.getDrivers()[0].getFio()+", "+bob.getAge()+", "+bob.getPosition()+", "+bob.getDriverLicense());
 
     Driver john = new Driver("John", 20, 23, 5,
-            2004, true, "Intern");
+            2004, true, "Intern", 40,DriverLicense.CATEGORY_B);
     driversRoom.addDriver(john);
     System.out.println(driversRoom.getDrivers()[1].getFio()+", "+john.getAge()+", "+john.getPosition());
 
     Driver harry = new Driver("Harry", 30, 10, 6,
-            1994, true, "Master");
+            1994, true, "Master", 36, DriverLicense.CATEGORY_A);
     driversRoom.addDriver(harry);
     System.out.println(driversRoom.getDrivers()[2].getFio()+", "+harry.getAge()+", "+harry.getPosition());
 
     Driver marry = new Driver("Marry", 20, 1, 5,
-            2004, false, "Intern");
+            2004, false, "Intern", 40, DriverLicense.CATEGORY_D);
     driversRoom.addDriver(marry);
     System.out.println(driversRoom.getDrivers()[3].getFio()+", "+marry.getAge()+", "+marry.getPosition());
 
     Driver bill = new Driver("Bill", 45, 6, 10,
-            1979, true, "Professional");
+            1979, true, "Professional", 36, DriverLicense.CATEGORY_C);
     driversRoom.addDriver(bill);
     System.out.println(driversRoom.getDrivers()[4].getFio()+", "+bill.getAge()+", "+bill.getPosition());
 
     Driver ostin = new Driver("Ostin", 45, 15, 8,
-            1979, true, "Professional");
+            1979, true, "Professional", 36, DriverLicense.CATEGORY_D);
     driversRoom.addDriver(ostin);
     System.out.println(driversRoom.getDrivers()[5].getFio()+", "+ostin.getAge()+", "+ostin.getPosition());
 
     Driver katrin = new Driver("Katrin", 30, 8, 2,
-            1994, false, "Master");
+            1994, false, "Master", 42, DriverLicense.CATEGORY_A);
     driversRoom.addDriver(katrin);
     System.out.println(driversRoom.getDrivers()[6].getFio()+", "+driversRoom.getDrivers()[6].getAge()+", "+driversRoom.getDrivers()[6].getPosition());
 
     Driver alex = new Driver("Alex", 35, 9, 4,
-            1999, true, "Master");
+            1999, true, "Master", 38, DriverLicense.CATEGORY_D);
     driversRoom.addDriver(alex);
     System.out.println(driversRoom.getDrivers()[7].getFio()+", "+driversRoom.getDrivers()[7].getAge()+", "+driversRoom.getDrivers()[7].getPosition());
 
     Driver mila = new Driver("Mila", 31, 4, 9,
-            1993, false, "Intern");
+            1993, false, "Intern", 41, DriverLicense.CATEGORY_C);
     driversRoom.addDriver(mila);
     System.out.println(driversRoom.getDrivers()[8].getFio()+", "+driversRoom.getDrivers()[8].getAge()+", "+driversRoom.getDrivers()[8].getPosition());
 
     Driver mike = new Driver("Mike", 21, 10, 10,
-            2003, true, "Intern");
+            2003, true, "Intern", 40,DriverLicense.CATEGORY_C);
     driversRoom.addDriver(mike);
     System.out.println(driversRoom.getDrivers()[9].getFio()+", "+driversRoom.getDrivers()[9].getAge()+", "+driversRoom.getDrivers()[9].getPosition());
 
     Driver sam = new Driver("Sam", 33, 25, 06,
-            1997, true, "Master");
+            1997, true, "Master", 36, DriverLicense.CATEGORY_B);
     driversRoom.addDriver(sam);
     System.out.println(driversRoom.getDrivers()[10].getFio()+", "+driversRoom.getDrivers()[10].getAge()+", "+driversRoom.getDrivers()[10].getPosition());
 
     Driver john2 = new Driver("John", 25, 30, 3,
-            1999, true, "Intern");
+            1999, true, "Intern", 36, DriverLicense.CATEGORY_D);
     driversRoom.addDriver(john2);
     System.out.println(driversRoom.getDrivers()[11].getFio()+", "+driversRoom.getDrivers()[11].getAge()+", "+driversRoom.getDrivers()[11].getPosition());
 
     Driver harry2 = new Driver("Harry", 50, 9, 1,
-            1974, true, "Professional");
+            1974, true, "Professional", 35, DriverLicense.CATEGORY_A);
     driversRoom.addDriver(harry2);
     System.out.println(driversRoom.getDrivers()[12].getFio()+", "+driversRoom.getDrivers()[12].getAge()+", "+driversRoom.getDrivers()[12].getPosition());
 
     Driver marry2 = new Driver("Marry", 20, 5, 12,
-            2004, false, "Intern");
+            2004, false, "Intern", 35, DriverLicense.CATEGORY_C);
     driversRoom.addDriver(marry2);
     System.out.println(driversRoom.getDrivers()[13].getFio()+", "+driversRoom.getDrivers()[13].getAge()+", "+driversRoom.getDrivers()[13].getPosition());
 
     Driver bill2 = new Driver("Bill", 55, 9, 5,
-            1969, true, "Professional");
+            1969, true, "Professional", 41, DriverLicense.CATEGORY_F);
     driversRoom.addDriver(bill2);
     System.out.println(driversRoom.getDrivers()[14].getFio()+", "+driversRoom.getDrivers()[14].getAge()+", "+driversRoom.getDrivers()[14].getPosition());
   }
