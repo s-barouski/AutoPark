@@ -148,5 +148,21 @@ public class Main {
             1969, true, "Professional", 41, DriverLicense.CATEGORY_F);
     driversRoom.addDriver(bill2);
     System.out.println(driversRoom.getDrivers()[14].getFio()+", "+driversRoom.getDrivers()[14].getAge()+", "+driversRoom.getDrivers()[14].getPosition());
+
+  Manager bobbi = new Manager();
+  bobbi.setFio("Bobbi Gray");
+  bobbi.setAge(32);
+  bobbi.setPosition("Supervisor");
+    System.out.println(bobbi.getFio()+", "+bobbi.getAge()+", "+bobbi.getPosition() );
+
+    Bookkeeper hanna = new Bookkeeper();
+    hanna.setFio("Hanna Lebowski");
+    hanna.setAge(25);
+    hanna.setPosition("junior bookkeeher");
+    System.out.println(hanna.getFio()+", "+hanna.getAge()+", "+ hanna.getPosition());
+
+    
+
+
   }
 }

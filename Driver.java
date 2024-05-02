@@ -1,4 +1,5 @@
-public class Driver extends People {
+public class Driver{
+
 
 
     private String fio;
@@ -8,9 +9,7 @@ public class Driver extends People {
     private int birthdateYear;
     private int birthdateMonth;
     private int birthdateDay;
-
     private int letherFoot;
-
     private DriverLicense driverLicense;
 
 
@@ -28,11 +27,11 @@ public class Driver extends People {
         this.birthdateDay = birthdateDay;
         this.birthdateMonth = birthdateMonth;
         this.birthdateYear = birthdateYear;
-
         this.letherFoot = letherFoot;
         this.driverLicense = driverLicense;
 
     }
+
 
 
     public String getFio() {
@@ -42,7 +41,6 @@ public class Driver extends People {
     public void setFio(String fio) {
         this.fio = fio;
     }
-
     public int getAge() {
         return age;
     }
