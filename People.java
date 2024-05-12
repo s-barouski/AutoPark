@@ -4,9 +4,9 @@
 
 public abstract class People {
 
-    private String fio;
-    private int age;
-    private String position;
+    String fio;
+    int age;
+    String position;
 
     public String getFio() {
         return fio;

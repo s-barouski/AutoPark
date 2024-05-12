@@ -1,17 +1,11 @@
-public class Driver{
+public class Driver extends People{
 
-
-
-    private String fio;
-    private int age;
     private boolean isMale;
-    private String position;
     private int birthdateYear;
     private int birthdateMonth;
     private int birthdateDay;
     private int letherFoot;
     private DriverLicense driverLicense;
-
 
     public Driver() {
 
@@ -20,10 +14,10 @@ public class Driver{
     public Driver(
             String fio, int age, int birthdateDay, int birthdateMonth, int birthdateYear, boolean isMale, String position, int letherFoot, DriverLicense driverLicense) {
 
-        this.fio = fio;
-        this.age = age;
+        setFio(fio);
+        setAge(age);
         this.isMale = isMale;
-        this.position = position;
+        setPosition(position);
         this.birthdateDay = birthdateDay;
         this.birthdateMonth = birthdateMonth;
         this.birthdateYear = birthdateYear;

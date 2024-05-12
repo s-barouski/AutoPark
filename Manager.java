@@ -1,17 +1,11 @@
 public class Manager extends People {
 
-    @Override
-    public void setFio(String fio) {
-        super.setFio(fio);
+    public Manager (String fio, int age, String position){
+        setFio(fio);
+        setAge(age);
+        setPosition(position);
     }
-
-    @Override
-    public void setAge(int age) {
-        super.setAge(age);
-    }
-
-    @Override
-    public void setPosition(String position) {
-        super.setPosition(position);
+    void Manag (){
+        System.out.println("ФИО: "+getFio()+", "+"Возраст: "+getAge()+", "+"Должность: "+getPosition());
     }
 }
